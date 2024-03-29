@@ -261,7 +261,7 @@ main {
   align-items: center;
   gap: 6rem;
 
-  & .hero-subheading{
+  & .hero-subheading {
     color: var(--main-color);
     text-transform: uppercase;
     letter-spacing: 0.2rem;
@@ -272,19 +272,19 @@ main {
 
   }
 
-  & .hero-heading{
+  & .hero-heading {
     color: rgb(126, 29, 29);
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 2.9rem;
-}
+  }
 
-& .hero-para{
-  color: whitesmoke;
-  margin: 2rem 0 4rem .7rem;
+  & .hero-para {
+    color: whitesmoke;
+    margin: 2rem 0 4rem .7rem;
 
-}
+  }
 }
 
 
@@ -305,15 +305,15 @@ main {
 
 /* ******extra products******* */
 
-.grid-three--cols{
+.grid-three--cols {
   gap: 1rem;
 
-  & :div{
+  & :div {
     justify-self: left;
   }
 }
 
-.div-extra{
+.div-extra {
   padding: 3rem 1.5rem;
   position: relative;
   background-color: var(--backgroundSecondary);
@@ -332,7 +332,7 @@ main {
     z-index: 1;
   }
 
-  & p{
+  & p {
     text-transform: uppercase;
     font-size: 1.5rem;
     color: #535bf2;
@@ -340,19 +340,19 @@ main {
 
   }
 
-  & h3{
+  & h3 {
     text-transform: capitalize;
     font-size: 2.1rem;
     margin: 0.1rem 0 1rem 0;
   }
 
-  & a{
+  & a {
     color: var(--main-color);
-     border-bottom: 0.1rem solid var(--secondaryColor);
+    border-bottom: 0.1rem solid var(--secondaryColor);
     text-transform: uppercase;
   }
 
-  & .extra-img{
+  & .extra-img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -417,9 +417,10 @@ main {
   align-items: center;
 }
 
-.why-choose--div{
+.why-choose--div {
   margin-bottom: 3.5rem;
 }
+
 .section-why--choose .text-align--right .why-choose--div {
   display: flex;
   flex-direction: column;
@@ -430,7 +431,7 @@ main {
   align-items: start;
 }
 
-.common-text--highlight{
+.common-text--highlight {
   color: var(--main-color);
   width: 6rem;
   height: 6rem;
@@ -444,6 +445,7 @@ main {
   font-size: 2rem;
 
 }
+
 .why-choose--div .section-common--title {
   margin-top: 1.2rem;
 }
@@ -489,15 +491,19 @@ main {
   0% {
     background-color: #b3d0ff;
   }
+
   25% {
     background-color: #80b1ff;
   }
+
   50% {
     background-color: #4d91ff;
   }
+
   75% {
     background-color: #99c0ff;
   }
+
   100% {
     background-color: #3381ff;
   }
@@ -722,6 +728,7 @@ footer {
     font-weight: bold;
   }
 }
+
 /**** Our Home product section Ends  ****/
 
 #cartValue {
@@ -771,17 +778,19 @@ footer {
     border-right: 0.1rem solid #d8d8d8;
     border-left: 0.1rem solid #d8d8d8;
     border-radius: 0;
+
     &:last-child {
       border-bottom: 0.1rem solid #d8d8d8;
     }
   }
 
-  & .card {
+  & .card{
     width: 100%;
     display: grid;
     grid-template-columns: 0.5fr 0.5fr 1fr 0.5fr 1fr 1fr;
-    align-items: center; /* margin: auto; */
-    gap: 3.2rem;
+    align-items: center;
+    /* margin: auto; */
+    gap: 2.2rem;
   }
 
   & .productImage {
@@ -864,5 +873,3 @@ footer {
 }
 
 /*****  Add to Cart page ends *****/
-
-

@@ -14,6 +14,7 @@ export const homeQuantityToggle = (event, id, stock) => {
         }
         else if (quantity === stock) {
             quantity = stock;
+            
         }
     }
 
