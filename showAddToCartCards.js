@@ -3,6 +3,7 @@ import { incrementDecrement } from "./incrementDecrement";
 import { getCartProductFromLS } from "./getCartProducts";
 import { removeProdFromCart } from "./removeProdFromCart";
 import { fetchQuantityFromCartLS } from "./fetchQuantityFromCartLS";
+import { updateCartProductTotal } from "./updateCartProductTotal";
 
 
 let cartProducts = getCartProductFromLS();
@@ -56,5 +57,11 @@ const showCartProduct = () => {
 };
 
 showCartProduct();
+
+
+// calculating the card total in our cartProducts page
+// --------------------------------------------------------
+updateCartProductTotal();
+
 
 

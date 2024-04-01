@@ -1,4 +1,5 @@
 import { getCartProductFromLS } from "./getCartProducts";
+import { updateCartProductTotal } from "./updateCartProductTotal";
 
 
  
@@ -58,4 +59,7 @@ import { getCartProductFromLS } from "./getCartProducts";
   //   also we need to reflect the changes on the screen too
   productQuantity.innerText = quantity;
   productPrice.innerText = localStoragePrice;
+
+updateCartProductTotal();
+
  };

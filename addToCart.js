@@ -1,4 +1,5 @@
 import { getCartProductFromLS } from "./getCartProducts";
+import { showToast } from "./showToast";
 import { updateCartValue } from "./updateCartValue";
 
 getCartProductFromLS();
@@ -35,6 +36,8 @@ export const addToCart = (event, id, stock) => {
         });
         // logic to set local storage with updated value of quantity and price
     localStorage.setItem("cartProductLS", JSON.stringify(updatedCart));
+    showToast("add", id);
+
 
 
     }
