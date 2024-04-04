@@ -218,6 +218,15 @@ a {
   }
 }
 
+.Brand_logo h1{
+  border: 1px solid black;
+  background-color: #04214d;
+  color: whitesmoke;
+  padding: 2rem 1rem;
+  text-transform: capitalize;
+  border-radius: 5px;
+}
+
 /** CSS for toast notifications */
 .toast {
   position: fixed;
@@ -321,7 +330,7 @@ main {
   }
 
   & .hero-heading {
-    color: rgb(126, 29, 29);
+    color: rgb(238 60 173);
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -518,8 +527,8 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 45rem;
-  height: 45rem;
+  width: 43rem;
+  height: 43rem;
   border-radius: 50%;
   background-color: var(--main-color);
   -webkit-transform: translate(-50%, -50%);
@@ -563,8 +572,8 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50rem;
-  height: 50rem;
+  width: 46rem;
+  height: 46rem;
   border-radius: 50%;
   background-color: transparent;
   border: 0.5rem solid var(--supporting-color);
@@ -637,6 +646,17 @@ footer {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   margin-top: 6.4rem;
+  padding: 0.6rem 1.2rem;
+}
+
+.content_1 h1{
+  border: 1px solid black;
+  background-color: #04214d;
+  color: whitesmoke;
+  padding: 2rem 1rem;
+  text-transform: capitalize;
+  border-radius: 5px;
+  width: 28rem;
 }
 
 .footer-container .content_1 img {
@@ -967,3 +987,192 @@ footer {
 }
 
 /*****  Add to Cart page ends *****/
+
+/*****  responsive page media query *****/
+
+@media (width <= 1220px){
+  html{
+    font-size: 54%;
+  }
+
+  .section-hero-image{
+    width: 90%;
+  }
+  :is(
+    .section-about,
+    .section-blog,
+    .section-course,
+    .section-contact--homepage,
+    .section-why--choose
+  )
+  .grid{
+    gap: 6rem;
+  }
+
+  .choose-center-div figure::after {
+    width: 42rem;
+    height: 42rem;
+  }
+  .choose-center-div figure::before {
+    width: 40rem;
+    height: 40rem;
+  }
+}
+
+@media(width <= 980px){
+
+  body{
+    padding: 0 0.6rem;
+  }
+
+  .section-products #productContainer {
+    grid-template-columns: repeat(2, minmax(40%, 1fr));
+  }
+
+  .section-hero .hero-heading{
+    font-size: 2.8rem;
+  }
+
+  footer{
+    padding: 0 1.8rem;
+  }
+
+  .footer-container{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(33%, 1fr));
+
+    & .content_1 {
+      grid-column: 1 / -1;
+      /* .content now take full space in grid column with help of above property */
+      margin-bottom: 3.2rem;
+    }
+
+    & .content_4 {
+      margin-top: 3.2rem;
+    }
+  }
+
+  main .section-hero{
+    height: auto;
+
+    & .grid-two--cols{
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .section-hero .section-hero--content {
+    order: 2;
+  }
+
+  .section-hero .section-hero-image{
+    display: grid;
+    place-items: center;
+    
+    & figure{
+      display: grid;
+      place-items: center;
+    }
+  }
+
+  .section-hero img{
+    width: 70%;
+    margin-bottom: 1rem;
+  }
+
+  .custom-shape-divider-bottom-1708847483 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 8rem;
+  }
+
+  .section-about .about-div {
+    text-align: left;
+    padding: 0;
+  }
+
+}
+
+@media(width <= 760px){
+
+  .grid-two--cols{
+    grid-template-columns: 1fr;
+  }
+  .section-contact .grid-two--cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-three--cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-four--cols{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-products #productContainer {
+    grid-template-columns: repeat(1, minmax(33%, 1fr));
+  }
+
+  #productCartContainer .card {
+    width: 100%;
+    display: grid;
+    /* grid-template-columns: 0.5fr 0.5fr 1fr 0.5fr 1fr 1fr; */
+    grid-template-columns: 0.5fr 0.1fr repeat(2, 1fr);
+    align-items: center;
+    /* margin: auto; */
+    gap: 3.2rem;
+  }
+
+  .productQuantity {
+    text-align: center;
+  }
+
+  .stockElement {
+    grid-column: 1 / 4;
+  }
+
+  .remove-to-cart-button {
+    grid-column: 4 / -1;
+  }
+
+  /* footer .grid-four--cols {
+    grid-template-columns: repeat(1, minmax(100%, 1fr));
+    text-align: center;
+  } */
+
+  .section-navbar .container {
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  .section-why--choose {
+    & img {
+      width: 30%;
+    }
+
+    & .grid {
+      gap: 1.4rem;
+    }
+
+    & .text-align--right .why-choose--div {
+      align-items: flex-start;
+    }
+
+    & .choose-left-div {
+      text-align: left;
+    }
+  }
+
+  .section-contact--homepage .btn {
+    display: block;
+    text-align: center;
+  }
+
+  :is(.section-contact--homepage) .container:first-child {
+    padding: 6.4rem 0rem 2.4rem 0rem;
+  }
+}
+/***** End  media queries Section *****/
+
+
+
